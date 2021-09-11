@@ -27,40 +27,40 @@ body {
     border-radius: 8px;
     padding: 2rem 2.4rem;
   }
-  body .container .card .main {
+  body .container .card .content {
     position: relative;
     z-index: 99;
   }
-  body .container .card .main .person {
+  body .container .card .content .person {
     display: flex;
     justify-content: start;
     flex-direction: row;
     margin-bottom: 1rem;
   }
-  body .container .card .main .person img {
+  body .container .card .content .person img {
     width: 40px;
     height: 40px;
     margin-right: 1rem;
     border-radius: 50%;
   }
-  body .container .card .main .person .profile {
+  body .container .card .content .person .profile {
     display: flex;
     flex-direction: column;
   }
-  body .container .card .main .person .profile .name {
+  body .container .card .content .person .profile .name {
     font-weight: 600;
     margin: 1px 0;
   }
-  body .container .card .main .person .profile .text-sm {
+  body .container .card .content .person .profile .text-sm {
     font-weight: 500;
     margin: 1px 0;
     color: rgba(255, 255, 255, 0.5);
   }
-  body .container .card .main h2 {
+  body .container .card .content h2 {
     margin-bottom: 1rem;
     font-weight: 600;
   }
-  body .container .card .main .quote {
+  body .container .card .content .quote {
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
   }
@@ -80,14 +80,14 @@ body {
     background-color: #48556a;
   }
   body .container .card-3 {
-    background-color: #ecf2f8;
+    background-color: white;
     color: #19212e;
   }
   body .container .card-4 {
     background-color: #19212e;
   }
   body .container .card-5 {
-    background-color: #ecf2f8;
+    background-color: white;
     color: #19212e;
   }
 }
@@ -108,40 +108,40 @@ body {
     border-radius: 8px;
     padding: 2rem 2rem;
   }
-  body .container .card .main {
+  body .container .card .content {
     position: relative;
     z-index: 99;
   }
-  body .container .card .main .person {
+  body .container .card .content .person {
     display: flex;
     justify-content: start;
     flex-direction: row;
     margin-bottom: 1rem;
   }
-  body .container .card .main .person img {
+  body .container .card .content .person img {
     width: 40px;
     height: 40px;
     margin-right: 1rem;
     border-radius: 50%;
   }
-  body .container .card .main .person .profile {
+  body .container .card .content .person .profile {
     display: flex;
     flex-direction: column;
   }
-  body .container .card .main .person .profile .name {
+  body .container .card .content .person .profile .name {
     font-weight: 600;
     margin: 1px 0;
   }
-  body .container .card .main .person .profile .text-sm {
+  body .container .card .content .person .profile .text-sm {
     font-weight: 500;
     margin: 1px 0;
     color: rgba(255, 255, 255, 0.5);
   }
-  body .container .card .main h2 {
+  body .container .card .content h2 {
     margin-bottom: 1rem;
     font-weight: 600;
   }
-  body .container .card .main .quote {
+  body .container .card .content .quote {
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
   }
@@ -163,8 +163,9 @@ body {
     grid-area: 2 / 1 / 3 / 3;
   }
   body .container .card-3 {
-    background-color: #ecf2f8;
-    color: #19212e;
+    background-color: white;
+    color: #19212e !important;
+    box-shadow: 6px 6px 10px 0px #0000001f;
     grid-area: 2 / 3 / 3 / 5;
   }
   body .container .card-4 {
@@ -173,8 +174,9 @@ body {
     height: fit-content;
   }
   body .container .card-5 {
-    background-color: #ecf2f8;
-    color: #19212e;
+    background-color: white;
+    color: #19212e !important;
+    box-shadow: 6px 6px 10px 0px #0000001f;
     grid-area: 3 / 3 / 4 / 5;
   }
 }
@@ -186,84 +188,21 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-  }
-  body .container .card {
-    color: white;
-    position: relative;
-    border-radius: 8px;
-    padding: 2rem 2.4rem;
-  }
-  body .container .card .main {
-    position: relative;
-    z-index: 99;
-  }
-  body .container .card .main .person {
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    margin-bottom: 1rem;
-  }
-  body .container .card .main .person img {
-    width: 40px;
-    height: 40px;
-    margin-right: 1rem;
-    border-radius: 50%;
-  }
-  body .container .card .main .person .profile {
-    display: flex;
-    flex-direction: column;
-  }
-  body .container .card .main .person .profile .name {
-    font-weight: 600;
-    margin: 1px 0;
-  }
-  body .container .card .main .person .profile .text-sm {
-    font-weight: 500;
-    margin: 1px 0;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  body .container .card .main h2 {
-    margin-bottom: 1rem;
-    font-weight: 600;
-  }
-  body .container .card .main .quote {
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 500;
   }
   body .container .card-1 {
-    background-color: #7541c8;
     grid-area: 1 / 1 / 2 / 3;
   }
-  body .container .card-1 .bg-quotation {
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    z-index: 1;
-  }
-  body .container .card-1 .person img {
-    border: 2px solid #ac7ef7;
-  }
   body .container .card-2 {
-    background-color: #48556a;
     grid-area: 1 / 3 / 2 / 4;
   }
   body .container .card-3 {
-    background-color: #ecf2f8;
-    color: #19212e;
-    box-shadow: 6px 6px 10px 0px #0000001f;
     grid-area: 2 / 1 / 3 / 2;
   }
   body .container .card-4 {
-    background-color: #19212e;
     grid-area: 2 / 2 / 3 / 4;
     height: auto;
   }
   body .container .card-5 {
-    background-color: #ecf2f8;
-    color: #19212e;
-    box-shadow: 6px 6px 10px 0px #0000001f;
     grid-area: 1 / 4 / 3 / 5;
   }
 }
